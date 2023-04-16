@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="utf-8">
+        <title>Empresa automotriz</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <img src="logo.png" id="logoempresa" alt="Logo empresa">
+            <div class="container col-sm-2 col-md-2 col-l-2 col-xl-2">
+            <nav class="navbar">
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="#"><i>Menú</i><span class="arrow">&#9660;</span></a>
+                <ul class="submenu">
+                    <li><a href="#presentacion"><i>Empresa</i></a></li>
+                    <li><a href="#personal"><i>Personal</i></a></li>
+                    <li><a href="#contacto"><i>Contacto</i></a></li>
+                    <li><a href="#cotizacion"><i>Cotización</i></a></li>
+                </ul>
+                </li>
+            </ul>
+            </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section id="presentacion">
+                <div class="container col-sm-8 col-md-8 col-l-6 col-xl-6" id="primeraseccion">
+                <h2 class="nombreempresa">Presentación de la Empresa</h2> <br>
+                <p class="textoempresa">Somos una empresa enfocada en el <i>rubro automotriz</i>, nos mueve el orgullo de saber que colaboramos en el salto de calidad de vida que nuestros clientes buscan a la hora de adquirir un vehículo. Por eso, nuestro objetivo es generar diversas formas de pago que permitan un <i>acceso económico</i> distintos a cualquier compañía convencional. Nuestro personal se encargar de personalizar la transacción dependiendo de sus posibilidades, para que ustedes puedan acceder al <b>auto de sus sueños</b> y nosotros ver hacerse realidad sus metas.</p>
+                </div>
+            </section>
+
+            <section id="personal">
+                <div class="container col-sm-8 col-md-8 col-l-6 col-xl-6">
+                    <h2 class="nombrepersonal">Presentación personal</h2> <br>
+                <div class="card flex-row aling-items-center text-white border-secondary" id="card">
+                    <img class="card-img-left order-1" src="personal.PNG" id="personalsanti" alt="Card image cap">
+                    <div class="card-body text-right order-2">
+                      <h4 class="card-title">Santiago Vereb</h4>
+                      <p class="card-text text-lg" id="textosanti">Estudiante de Desarrollo Web con orientación <i>Front-End</i>. Estoy a pocos pasos de obtener mi título de Profesor en Geografía y decidí profundizar en la Programación. Cuento con conocimientos de aplicación en <i>JavaScript, HTML y CSS</i>.</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section id="contacto">
+                <div class="container col-sm-8 col-md-8 col-l-6 col-xl-6">
+                <h2 class="textocontacto">Contacto</h2> <br>
+                <form class="textocontact" if="formulario-contacto">
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" required>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea type="text" id="mensaje" name="mensaje" required></textarea>
+                    <button type="submit" id="botonenviar"><b>Enviar</b></button>
+                </form>
+                <div id="respuesta-contacto"></div>
+                </div>
+            </section>
+
+            <section id="cotizacion">
+                <div class="container col-sm-8 col-md-8 col-l-6 col-xl-6">
+                <h2 class="textocotizacion">Cotización en 2 pasos</h2> <br>
+                <form id="cotizacion">
+                    <fieldset id="paso1">
+                        <legend>Paso 1: <i>Marca y Modelo</i></legend>
+                        <label for="marca">Marca:</label>
+                        <input type="text" id="marca" name="marca" required>
+                        <label for="modelo">Modelo:</label>
+                        <input type="text" id="modelo" name="modelo" required>
+                        <button type="button" id="siguiente-paso">Siguiente paso</button>
+                    </fieldset> <br> <br>
+                    <fieldset id="paso2">
+                        <legend>Paso 2: <i>Tus datos</i></legend>
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="telefono">Número de teléfono</label>
+                        <input type="number" id="telefono" name="telefono" required>
+                        <button type="button" id="anterior-paso">Paso anterior</button>
+                        <button type="submit" id="enviardatos"><b>Enviar solicitud</b></button>
+                    </fieldset>
+                </form>
+                <div id="respuesta-cotizacion" style="display: none"></div>
+                </div>
+            </section>
+
+            <section id="infoempresa">
+                <div class="container col-sm-8 col-md-8 col-l-6 col-xl-6">
+                    <h5><b>¿Dónde podés encontrarnos?</b></h5> <br>
+                    <p><b>Casa Central:</b> avenida Independencia 3145<br>
+                    <b>Sucursal 1:</b> San Juan 1678<br>
+                    <b>Sucursal 2:</b> Moreno 574</p> 
+                    <p><img src="instagram.svg" class="logoredes">@autofactor<img src="mail-bulk-solid.svg" class="logoredes">autofactor@gmail.com</p>
+                </div>
+            </section>
+
+            <section id="derechosautor">
+                <div class="container col-sm-8 col-md-8 col-l-6 col-xl-6">
+                    <p><i>Copyright © 2023. Todos los derechos reservados por Santiago Vereb.</i></p>
+                </div>
+            </section>
+
+        </main>
+
+    </body>
+
+</html>
