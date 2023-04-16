@@ -120,12 +120,13 @@ main {
 .nombreempresa {
     text-align: center;
     color: #000000;
-    text-shadow: 1px 1px 1px #a58228;
+    text-shadow: 1px 2px 2px #978c70;
 }
 
 .textoempresa {
     text-align: justify;
     color: #000000;
+    text-shadow: 0px 1px 1px #afafaf;
 }
 
 #card {
@@ -146,7 +147,7 @@ main {
 .nombrepersonal {
     text-align: center;
     color: #ebe9e9;
-    text-shadow: 2px 2px 2px #a58228;
+    text-shadow: 1px 3px 3px #978c70;
 }
 
 .card-title {
@@ -159,18 +160,18 @@ main {
 
 
 section {
+    background-color: #000000;
+    background-image: url("fondo2.png");
+    background-blend-mode:soft-light;
+    background-size:contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 80vp;
     padding: 50px;
-    background-color: #000000;
 }
 
-#contacto {
-    background-image: none;
-}
 
 section:nth-child(odd) {
     background-color: #6c757d;
@@ -199,6 +200,7 @@ ul li img {
     
 form label {
     display: block;
+    text-shadow: 0px 1px 1px #afafaf;
 }
     
 form input, form textarea {
@@ -209,10 +211,6 @@ form input, form textarea {
     border-radius: 5px;
     background-color: #ebe9e9;
     box-shadow: 2px 4px 2px #a58228;
-}
-
-.textocontacto {
-    color: #000000;
 }
 
 form button {
@@ -229,11 +227,12 @@ form button:hover {
 }
 
 .textocontacto {
-    text-shadow: 1px 1px 1px #a58228;
+    color: #000000;
+    text-shadow: 1px 2px 2px #978c70;
 }
 
 .textocotizacion {
-    text-shadow: 2px 2px 2px #a58228;
+    text-shadow: 1px 3px 3px #978c70;
 }
 
 #respuesta-contacto {
@@ -308,6 +307,7 @@ form button:hover {
 #infoempresa {
     text-align: center;
     padding: 2%;
+    text-shadow: 0px 1px 1px #afafaf;
 }
 
 .logoredes {
