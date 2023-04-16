@@ -1,0 +1,324 @@
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    background-color: #ebe9e9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    font-family: "Varela Round", sans-serif;
+    background-image: url("fondo.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.menu {
+    margin-left: 30%;
+    
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: -20%;
+    z-index: 1;
+    border: 1px solid #6c757d;
+    border-radius: 5%;
+    background-color: #ebe9e9;
+    margin-top: 20%;
+    margin-left: -30%;
+    height: 700%;
+}
+
+.submenu li {
+    width: 65%;
+    background-color: #ebe9e9;
+    border: 1px solid #ebe9e9;
+    align-items: center;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.arrow {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.menu li {
+    display: flex;
+    margin-right: 0px;
+    position: relative;
+    
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: #000000;
+    display: block;
+    font-size: 15px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#primeraseccion {
+    position: relative;
+    margin-top: 8%;
+}
+
+#logoempresa {
+    max-width: 150px;
+    width: 150px;
+    height: 100px;
+    margin-left: 25%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: block;
+    padding: 1.5%;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: #000000dd;
+}
+
+nav ul li:hover {
+    background-color: #c2982e;
+}
+
+main {
+    font-family: "Varela Round", sans-serif;
+}
+
+.nombreempresa {
+    text-align: center;
+    color: #000000;
+    text-shadow: 1px 1px 1px #a58228;
+}
+
+.textoempresa {
+    text-align: justify;
+    color: #000000;
+}
+
+#card {
+    padding: 30px;
+    background-color: #a58228;
+    box-shadow: 
+                inset 2px 2px 2px #6c757d,
+                4px 6px 4px #6c757d;
+}
+
+#personalsanti {
+    width: 35%;
+    height: 35%;
+    margin-top: 4%;
+    border-radius: 5%;
+}
+
+.nombrepersonal {
+    text-align: center;
+    color: #ebe9e9;
+    text-shadow: 2px 2px 2px #a58228;
+}
+
+.card-title {
+    text-align: center;
+}
+
+#textosanti {
+    text-align: justify;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vp;
+    padding: 50px;
+    background-color: #000000;
+}
+
+#contacto {
+    background-image: none;
+}
+
+section:nth-child(odd) {
+    background-color: #6c757d;
+}
+
+h1, h2, h3, ul {
+    margin-top: 0;
+    text-align: center;
+}
+
+ul li {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+ul li img {
+    border-radius: 50%;
+    width: 100px;
+}
+    
+form label {
+    display: block;
+}
+    
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5%;
+    border: 1px solid #B8B8B8;
+    border-radius: 5px;
+    background-color: #ebe9e9;
+    box-shadow: 2px 4px 2px #a58228;
+}
+
+.textocontacto {
+    color: #000000;
+}
+
+form button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #a58228;
+    color: #ebe9e9;
+    border: none;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #82692B;
+}
+
+.textocontacto {
+    text-shadow: 1px 1px 1px #a58228;
+}
+
+.textocotizacion {
+    text-shadow: 2px 2px 2px #a58228;
+}
+
+#respuesta-contacto {
+    margin-top: 20px;
+}
+
+#cotizacion {
+    color: #ebe9e9;
+}
+
+#botonenviar {
+    box-shadow: 2px 4px 2px #000000;
+}
+
+#enviardatos {
+    box-shadow: 2px 4px 2px #6c757d;
+}
+
+#wizard {
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#wizard fieldset{
+    display: none;
+}
+
+#wizard fieldset:first-child{
+    display: block;
+}
+
+#wizard legend {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#respuesta-cotizacion {
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ccc;
+    border: 2px solid #B8B8B8;
+    border-radius: 10px;
+}
+
+#respuesta-cotizacion h3 {
+    margin-top: 0;
+}
+
+#respuesta-cotizacion p {
+    margin-bottom: 20px;
+}
+
+#respuesta-cotizacion table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#respuesta-cotizacion th, #respuesta-cotizacion td {
+    border: 1px solid #B8B8B8;
+    text-align: left;
+    padding: 8px;
+}
+
+#respuesta-cotizacion th {
+    background-color: #ccc;
+}
+
+#infoempresa {
+    text-align: center;
+    padding: 2%;
+}
+
+.logoredes {
+    width: 40px;
+    height: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#derechosautor {
+    color:#ebe9e9;
+    text-align: center;
+    padding: 1%;
+}
