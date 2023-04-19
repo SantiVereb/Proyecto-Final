@@ -11,7 +11,7 @@ header {
     right: 0;
     z-index: 9999;
     font-family: "Varela Round", sans-serif;
-    background-image: url("fondo.png");
+    background-image: url("images/fondo.png");
     background-repeat: no-repeat;
     background-size:contain;
 }
@@ -167,7 +167,7 @@ main {
 
 section {
     background-color: #000000;
-    background-image: url("fondo2.png");
+    background-image: url("images/fondo2.png");
     background-blend-mode:soft-light;
     background-size:contain;
     display: flex;
