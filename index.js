@@ -107,7 +107,7 @@ $(document).ready(function () {
         data: {
           html: $("#cotizacion").html(),
           fileName: "cotizacion.pdf",
-          title: "Cotización solicitada"
+          title: "Cotización solicitada",
           orientation: "portrait",
           pageSize: "A4",
           margin: "20mm",
