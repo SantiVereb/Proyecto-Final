@@ -66,11 +66,13 @@ function formularioProceso() {
         var resumen = "Resumen de la cotización:\n\n";
         resumen += "Marca: " + $("#marca").val() + "\n";
         resumen += "Modelo: " + $("#modelo").val() + "\n";
-        resumen += "Nombre: " + $("#nombre").val() + "\n";
+        resumen += "Nombre: " + $("#nombre1").val() + "\n";
         resumen += "Email: " + $("#mail").val() + "\n";
         resumen += "Telefono: " + $("#telefono").val() + "\n";
 
-        alert("El pedido de cotización del vehículo marca " + $("#marca").val() + ", modelo " + $("#modelo").val() + ", ha sido registrado. Nos comunicaremos a la brevedad. Revise la bandeja de entrada del correo " + $("#mail").val() + ". ¡Gracias!");
+        alert("¡Gracias por elegirnos, " + $("#nombre1").val() + "! El pedido de cotización del vehículo marca " + $("#marca").val() + ", modelo " + $("#modelo").val() + ", ha sido registrado. Nos comunicaremos a la brevedad. Revise la bandeja de entrada del correo " + $("#mail").val() + ". ¡Hasta pronto!");
+
+        alert(resumen);
     } else {
         var errors = validation.errors;
 
@@ -96,7 +98,7 @@ $(document).ready(function () {
       
       var marca = $("#marca").val();
       var modelo = $("#modelo").val();
-      var nombre = $("#nombre").val();
+      var nombre = $("#nombre1").val();
       var email = $("#mail").val();
       var telefono = $("#telefono").val();   
       var url = 'https://reqres.in/api/users';
