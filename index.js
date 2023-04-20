@@ -51,7 +51,8 @@ var constraints = {
     telefono: {
         presence: true,
         format: {
-            pattern: "\\d{10}",
+            minimum: 10,
+            maximum: 10,
             message: "Debe poseer 10 números"
         }
     }
@@ -69,7 +70,7 @@ function formularioProceso() {
         resumen += "Email: " + $("#mail").val() + "\n";
         resumen += "Telefono: " + $("#telefono").val() + "\n";
 
-        alert("El pedido de cotización del vehículo marca: " + $("#marca").val() + ", modelo " + $("#modelo").val() + ", ha sido registrado. Nos comunicaremos a la brevedad. Revise la bandeja de entrada del correo " + $("#mail").val() + ". ¡Gracias!");
+        alert("El pedido de cotización del vehículo marca " + $("#marca").val() + ", modelo " + $("#modelo").val() + ", ha sido registrado. Nos comunicaremos a la brevedad. Revise la bandeja de entrada del correo " + $("#mail").val() + ". ¡Gracias!");
     } else {
         var errors = validation.errors;
 
@@ -88,3 +89,39 @@ $(document).ready(function() {
         formularioProceso();
     });
 });
+
+$(document).ready(function () {
+    $('#cotizacion').submit(function (event) {
+        event.preventDefault();
+      
+      var marca = $("#marca").val();
+      var modelo = $("#modelo").val();
+      var nombre = $("#nombre").val();
+      var email = $("#mail").val();
+      var telefono = $("#telefono").val();   
+      var url = 'https://reqres.in/api/users';
+  
+      $.ajax({
+        url: url,
+        method: 'POST',
+        data: {
+          html: $("#cotizacion").html(),
+          fileName: "cotizacion.pdf",
+          title: "Cotización solicitada"
+          orientation: "portrait",
+          pageSize: "A4",
+          margin: "20mm",
+        },
+        dataType: "json",
+        success: function (response) {
+          window.location.href = response.url;
+        },
+        error: function(xhr, status, error) {
+            console.log(error);
+        }
+      });
+      $("#enviardatos").click(function() {
+        $("#cotizacion").submit();
+      })
+    });
+  });

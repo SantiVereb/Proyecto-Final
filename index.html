@@ -82,12 +82,22 @@
                     <fieldset id="paso1">
                         <legend>Paso 1: <i>Marca y Modelo</i></legend>
                         <label for="marca">Marca:</label>
-                        <input type="text" id="marca" name="marca" required>
+                        <select id="marca" name="marca" placeholder="Marca">
+                            <option value="Honda">Honda</option>
+                            <option value="Toyota">Toyota</option>
+                        </select>
                         <div id="marca-error" class="error"></div>
                         <label for="modelo">Modelo:</label>
-                        <input type="text" id="modelo" name="modelo" required>
+                        <select id="modelo" name="modelo" placeholder="Modelo">
+                            <option value="Civic">H Civic</option>
+                            <option value="Pilot">H Pilot</option>
+                            <option value="Crv">H CR-V</option>
+                            <option value="Corolla">T Corolla</option>
+                            <option value="Etios">T Etios</option>
+                            <option value="Camry">T Camry</option>
+                        </select>
                         <div id="modelo-error" class="error"></div>
-                        <button type="button" id="siguiente-paso">Siguiente paso</button>
+                        
                     </fieldset> <br> <br>
                     <fieldset id="paso2">
                         <legend>Paso 2: <i>Tus datos</i></legend>
@@ -99,8 +109,7 @@
                         <div id="email-error" class="error"></div>
                         <label for="telefono">Número de teléfono</label>
                         <input type="number" id="telefono" name="telefono" required>
-                        <div id="number-error" class="error"></div>
-                        <button type="button" id="anterior-paso">Paso anterior</button>
+                        <div id="number-error" class="error"></div>      
                         <button type="submit" id="enviardatos"><b>Enviar solicitud</b></button>
                     </fieldset>
                 </form>

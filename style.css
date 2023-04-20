@@ -209,7 +209,7 @@ form label {
     text-shadow: 0px 1px 1px #afafaf;
 }
     
-form input, form textarea {
+form input, form textarea, form select {
     width: 100%;
     padding: 10px;
     margin-bottom: 5%;
